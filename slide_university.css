@@ -152,4 +152,7 @@
     width: 16px;
     height: 4px;
   }
+  .promobox_vector{
+    display: none;
+  }
 }
