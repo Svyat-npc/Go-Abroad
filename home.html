@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Abroad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=PT+Sans&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <a href="home.html" class="logo">
+        <img src="image/Logo.svg" alt="" />
+      </a>
+      <nav class="header__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+          <li class="menu__item"><a href="about_us.html" class="menu__link">О нас</a></li>
+          <li class="menu__item dropdown">
+            <a href="country.html" class="menu__link">Страны</a>
+            <ul class="submenu">
+              <li><a href="italy.html">Италия</a></li>
+              <li><a href="malta.html">Мальта</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+          <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tel:87756038721" class="header__phone">
+        <img src="image/telephone.svg" />
+        <span>8 (775) 603–87–21</span>
+      </a>
+      <a href="#" class="header__whatsapp">
+        <img src="image/whatsapp.svg" alt="" />
+      </a>
+      <button class="header__btn">Свяжитесь с нами</button>
+
+
+      <button class="burger-btn js-burger-btn">
+        <img src="image/burger-btn.png" alt="Меню">
+      </button>
+    </div>
+  </header>
+
+  <div class="burger js-burger">
+    <div class="burger-content js-burger__content">
+      <nav class="nav-burger">
+        <a class="menu__link" href="about_us.html">О НАС</a>
+        <a class="menu__link" href="country.html">Страны</a>
+        <a class="menu__link" href="reviews.html">Отзывы</a>
+        <a class="menu__link" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+    <div class="js-burger__close-btn burger__close-btn">
+      <img class="burger-close" src="image/radix.png" alt="Закрыть">
+    </div>
+  </div>
+
+
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">Мечтаешь учиться за рубежом?</h1>
+        <p class="hero__text">
+          От уютных улочек Рима до солнечных побережий Мальты.<br /><br />
+          Сделай свой первый шаг к международному образованию, мы поддержим
+          тебя на каждом этапе.
+        </p>
+        <a href="#chances" class="hero__btn">Получить предложение</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-and-alumni">
+    <div class="gallery-container">
+      <div class="gallery-slides">
+        <div class="gallery__slide gallery__slide_active ">
+          <div class="box-image-first">
+          </div>
+          <div class="box-image-wrapper">
+            <h3 class="title-image-first">Гульназ Тургалиева1</h3>
+            <p class="text-image-first">Выпускница La Sapienza по специальности Sustainable Building Engineering</p>
+          </div>
+        </div>
+        <div class="gallery__slide ">
+          <div class="box-image-second">
+          </div>
+          <div class="box-image-wrapper">
+            <h3 class="title-image-second">Гульназ Тургалиева2</h3>
+            <p class="text-image-second">Выпускница La Sapienza по специальности Sustainable Building Engineering</p>
+          </div>
+        </div>
+        <div class="gallery__slide">
+          <div class="box-image-third">
+          </div>
+          <div class="box-image-wrapper">
+            <h3 class="title-image-third">Гульназ Тургалиева3</h3>
+            <p class="text-image-third">Выпускница La Sapienza по специальности Sustainable Building Engineering</p>
+          </div>
+        </div>
+
+        <div class="gallery-controls">
+          <button class="gallery__control-prev">
+            <img src="image/arrow-left.svg" alt="">
+          </button>
+          <button class="gallery__control-next">
+            <img src="image/arrow-right.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="company__info-container">
+      <div class="company__info-wrapper">
+        <h2 class="company__info-title">Добро пожаловать на сайт</h2>
+        <span class="company__info-subtitle">GOABROAD.KZ</span>
+        <p class="company__info-text">Текст для описания вашей компании, нужны данные для сайта ваше описание будет
+          здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.<br /><br />
+          Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей
+          компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные
+          для сайта ваше описание будет здесь. Текст для описания вашей компании.</p>
+      </div>
+      <div class="company__results-wrapper">
+        <div class="company__info-results">
+          <img class="company__-results-img" src="image/Mansicon.svg" alt="Опыт компании">
+          <p class="company__info-years">08+</p>
+          <p class="company__info-years-text">лет опыта работы работы</p>
+        </div>
+        <div class="company__info-results">
+          <img class="company__-results-img" src="image/medalicon.svg" alt="Степендии студентов">
+          <p class="company__info-years">1200+</p>
+          <p class="company__info-years-text">студентов получили нашу поддержку</p>
+        </div>
+        <div class="company__info-results">
+          <img class="company__-results-img" src="image/diplomaticon.svg" alt="Степендий выйграно">
+          <p class="company__info-years">18 млн€</p>
+          <p class="company__info-years-text">Стипендий было выиграно</p>
+        </div>
+        <div class="company__info-results">
+          <img class="company__-results-img" src="image/clockitem.svg" alt="Количество вузов">
+          <p class="company__info-years">35 вузов</p>
+          <p class="company__info-years-text">Италии и Мальты работаю с нами</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="country__university-container">
+    <h2 class="country__university-title">С университетами каких стран <span class="country__university-subtitle"
+        style="color: rgba(41, 62, 114, 1);">мы сотрудничаем</span></h2>
+    <div class="country__university-wrapper">
+      <div class="itali-container">
+        <a href="italy.html" class="country__university-btn">
+          <p class="itali-info">Италия</p>
+          <img class="btn__image-vector" src="image/vector_btn.svg" alt="">
+        </a>
+      </div>
+      <div class="malta-container">
+        <a href="malta.html" class="country__university-btn">
+          <p class="itali-info">Мальта</p>
+          <img class="btn__image-vector" src="image/vector_btn.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="university__slide-tape">
+    <h2 class="university__title">Нам доверяют выпускники</h2>
+    <div class="university__slider">
+      <div class="university__slide active">
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/Logo_Sapienz.svg" alt="Логотип университета Сапиенца">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/Logo_Dignitatis.svg" alt="Логотип университета Дигнитатис">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/Logo_DiTorino.svg" alt="Логотип университета Ди Торино">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/Logo_Studiorum.svg" alt="Логотип университета Студиорум">
+        </div>
+      </div>
+
+      <div class="university__slide ">
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 2">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 2">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 2">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 2">
+        </div>
+      </div>
+
+      <div class="university__slide ">
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 3">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 3">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 3">
+        </div>
+        <div class="university__slide-img-wrapper">
+          <img class="university__slide-img" src="image/" alt="Лента 3">
+        </div>
+      </div>
+
+      <div class="university__dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+  </section>
+
+  <section class="chance__assessment" id="chances">
+    <div class="chance__assessment-container">
+      <h2 class="promo-title">Начни свой путь сегодня! Студенты с нами покоряют Италию и Мальту</h2>
+      <p class="promo-subtitle">Ознакомьтесь с реальными приглашениями, которые получили наши студенты – доказательство
+        того, что поступление в университеты Италии и Мальты реально и достижимо с нашей помощью.</p>
+      <form class="promo-form__box" action="mailto:yourmail@example.com" method="post" enctype="text/plain">
+        <input class="input__box" type="text" id="name" name="name" required placeholder="Ваше имя">
+        <input class="input__box" type="tel" id="phone" name="phone" required placeholder="Ваш телефон">
+      </form>
+      <button class="promo__submit-btn" type="submit">Оценить шансы</button>
+    </div>
+    <div class="invits-container">
+      <div class="invite-slides">
+        <div class="invite__slide invite__slide_active ">
+          <div class="invite-image-first"></div>
+          <div class="invite-image-wrapper">
+            <h3 class="title-invite-first">Приглашения для Даны</h3>
+            <p class="text-invite-first">Università degli Studi di Roma Tor Vergata</p>
+          </div>
+        </div>
+        <div class="invite__slide">
+          <div class="invite-image-second"></div>
+          <div class="invite-image-wrapper">
+            <h3 class="title-invite-second">Ваш текст</h3>
+            <p class="text-invite-second">Ваш текст</p>
+          </div>
+        </div>
+        <div class="invite__slide">
+          <div class="invite-image-third"></div>
+          <div class="invite-image-wrapper">
+            <h3 class="title-invite-third">Ваш текст</h3>
+            <p class="text-invite-third">Ваш текст</p>
+          </div>
+        </div>
+        <div class="invite__gallery-controls">
+          <button class="gallery__control-left">
+            <img src="image/arrow-left.svg" alt="">
+          </button>
+          <button class="gallery__control-right">
+            <img src="image/arrow-right.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow">
+    <h2 class="workflow-title">Как мы работаем</h2>
+    <div class="timeline">
+      <div class="timeline__item left">
+        <div class="card">
+          <div class="card__text">
+            <h2 class="timeline__title">Заявка и консультация</h2>
+            <p class="timeline__text">Оставьте заявку или напишите в WhatsApp – мы свяжемся с вами, расскажем о
+              поступлении и поможем определить цели обучения.</p>
+          </div>
+          <img class="card_number" src="Image/card_number-1.svg" alt="">
+        </div>
+      </div>
+      <div class="timeline__item right">
+        <div class="card">
+          <img class="card_number" src="Image/card_number-2.svg" alt="">
+          <div class="card__text">
+            <h2 class="timeline__title">Выбор страны и университета</h2>
+            <p class="timeline__text">Мы оценим ваше образование, подберём подходящие университеты в Италии или на
+              Мальте и расскажем о вариантах поступления.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline__item left">
+        <div class="card">
+          <div class="card__text">
+            <h2 class="timeline__title">Подготовка документов</h2>
+            <p class="timeline__text">Проверим личное заявление, резюме, рекомендации и формы заявок, чтобы всё было
+              готово к подаче.</p>
+          </div>
+          <img class="card_number" src="Image/card_number-3.svg" alt="">
+        </div>
+      </div>
+      <div class="timeline__item right">
+        <div class="card">
+          <img class="card_number" src="Image/card_number-4.svg" alt="">
+          <div class="card__text">
+            <h2 class="timeline__title">Тестирование и приглашение</h2>
+            <p class="timeline__text">Поможем с оценкой уровня английского, подготовкой к IELTS и получением приглашения
+              от университета.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline__item left">
+        <div class="card">
+          <div class="card__text">
+            <h2 class="timeline__title">Виза и жильё</h2>
+            <p class="timeline__text">Сопроводим на всех этапах оформления визы и подберём комфортное жильё рядом с
+              кампусом.</p>
+          </div>
+          <img class="card_number" src="Image/card_number-5.svg" alt="">
+        </div>
+      </div>
+      <div class="timeline__item right">
+        <div class="card">
+          <img class="card_number" src="Image/card_number-6.svg" alt="">
+          <div class="card__text">
+            <h2 class="timeline__title">Переезд и адаптация</h2>
+            <p class="timeline__text">Организуем вылет и поможем с первыми шагами в новой стране, чтобы адаптация прошла
+              легко.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="advantages">
+    <div class="advantages__container">
+      <h2 class="advantages__title">Наши преимущества</h2>
+
+      <div class="advantages__list">
+        <div class="advantage__wrapper">
+          <div class="advantage">
+            <div class="advantage__icon">
+              <img src="Image/Nodeicon.svg" alt="Документы">
+            </div>
+            <div class="advantage__text">
+              <h3>Подготовка документов</h3>
+              <p>Правильная подготовка документов для поступления</p>
+            </div>
+          </div>
+          <div class="advantage">
+            <div class="advantage__icon">
+              <img src="Image/dateicon.svg" alt="Документы">
+            </div>
+            <div class="advantage__text">
+              <h3>Подготовка документов</h3>
+              <p>Правильная подготовка документов для поступления</p>
+            </div>
+          </div>
+
+          <div class="advantage">
+            <div class="advantage__icon">
+              <img src="Image/algoritmicon.svg" alt="Документы">
+            </div>
+            <div class="advantage__text">
+              <h3>Подготовка документов</h3>
+              <p>Правильная подготовка документов для поступления</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="advantages__image">
+          <img class="advantage_women-img" src="image/advantage_women.jpg" alt="Студент с книгами">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials">
+    <div class="testimonials__container">
+      <h2 class="testimonials__title">Отзывы и результаты</h2>
+      <div class="testimonials__slider">
+        <div class="testimonials__slide active">
+          <div class="testimonials__slide-img-wrapper">
+            <div class="testimonials__box-first">
+              <h3 class="title__box-first">Дарья Беляйкина</h3>
+              <h4 class="subtitle__box-first">Поступление в ВУЗ Италии</h4>
+              <p class="text__box-first">I just wanted to take a moment to share my experience and thank you all for the
+                incredible support throughout my journey. I got in touch with Zhankeldi based on a recommendation for
+                studying in Italy, and I’ve been really impressed by his and his GoAbroad team’s professionalism. From
+                the start, Zhankeldi helped me choose the right city for my studies, guided me through all the necessary
+                documents and procedures, and made everything so much easier. He even met me at the airport when I
+                arrived in Italy, helped me with the police station registration, and assisted with several other things
+                along the way. Thanks to his help, I was also able to win a scholarship, which has been a huge boost to
+                my experience here. Now, during my second year of a program, Zhankeldi and his team are still there for
+                me whenever I need advice or help. I can always count on them, and I truly appreciate the ongoing
+                support. I would definitely recommend his team to anyone looking for professional, reliable help with
+                studying abroad! Thanks again for everything!</p>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="Image/review_img-2.jpg" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="Image/review_img-3.jpg" alt="Превью статьи">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="Image/review_img-4.jpg" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__slide">
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Превью статьи">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__slide">
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Превью статьи">
+              </a>
+            </div>
+          </div>
+          <div class="testimonials__slide-img-wrapper">
+            <div class="overlay-link">
+              <a href="#">
+                <img src="" alt="Видео превью">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__dots">
+        <span class="testimonials__dot active"></span>
+        <span class="testimonials__dot"></span>
+        <span class="testimonials__dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="promo__container">
+
+      <div class="promo__left">
+        <div class="promo__phone">
+          <img src="image/phone_call-img.jpg" alt="Приложение Таймеры">
+        </div>
+        <div class="promobox_video-btn">
+          <p class="promobox_btn-text">Смотри <br />видео!</p>
+          <img class="promobox_vector" src="Image/vector_arow.svg" alt="стрелочка">
+          <button class="video_btn-player openPlayer">
+            <img src="Image/video_player.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+
+      <div class="promo__right">
+        <h3 class="promo__subtitle">Быстрое оформление, уверенное начало!</h3>
+        <p class="promo__text">
+          Заключите договор с нами в течение 24 часов после обращения и получите персональную скидку 10% на полное
+          сопровождение поступления.
+        </p>
+        <form class="promo__form" action="#" method="post">
+          <div class="promo__form-group">
+            <input class="input__box" type="text" id="name" name="name" required placeholder="Ваше имя">
+          </div>
+          <div class="promo__form-group">
+            <input class="input__box" type="tel" id="phone" name="phone" required placeholder="Ваш телефон">
+          </div>
+        </form>
+        <button type="submit" class="promo__submit-btn">Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_container">
+    <div class="footer__contacts-wrap">
+      <section class="footer_contacts">
+        <div class="footer_number">
+          <p class="number_text">Телефон:</p>
+          <a href="8 (775) 603–87–21" class="footer__phone">
+            <span>8 (775) 603–87–21</span>
+          </a>
+        </div>
+        <div class="footer_mail">
+          <p class="mail_text">Электронная почта:</p>
+          <a class="EMAIL-adress" href="mailto:hello@mail.com">mail@go-abroad.kz</a>
+        </div>
+        <div class="footer_icon-msgs">
+          <a href="#" class="footer__msg">
+            <img src="image/telegrame.svg" alt="" />
+          </a>
+          <a href="#" class="footer__msg">
+            <img src="image/footer_whatsapp.svg" alt="" />
+          </a>
+          <a href="#" class="footer__msg">
+            <img src="image/instagrame.svg" alt="" />
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer__nav-wrap">
+      <section class="footer_nav">
+
+        <div class="footer__logo">
+          <img src="image/footer_logo.svg" alt="Go Abroad logo">
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">О компании</h3>
+          <a href="about_us.html" class="footer__link">О Go Abroad</a>
+          <a href="reviews.html" class="footer__link">Отзывы</a>
+          <a href="contacts.html" class="footer__link">Контакты</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Страны</h3>
+          <a href="italy.html" class="footer__link">Италия</a>
+          <a href="malta.html" class="footer__link">Мальта</a>
+        </div>
+
+        <div class="footer__col footer__col--address">
+          <h3 class="footer__title">Наш адрес</h3>
+          <p class="footer__text">
+            Республика Казахстан, г. Астана,<br>
+            проспект Мангилик Ел 55/20,<br>
+            Блок С4.1, 3 этаж, офис 327
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="modal" style="display:none;">
+      <div class="modal-content">
+        <video width="640" height="360" controls>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <script src="gallery.js"></script>
+    <script src="slide-tape.js"></script>
+    <script src="invite__gallery.js"></script>
+    <script src="slide-testimonials.js"></script>
+    <script src="modal_video.js"></script>
+    <script src="burger.js"></script>
+</body>
+
+</html>

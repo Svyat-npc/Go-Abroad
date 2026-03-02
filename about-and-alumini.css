@@ -1,0 +1,582 @@
+ /* Блок про студентов */
+
+.about-and-alumni{
+    display: flex;
+    justify-content: center;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 80px;
+    gap: 540px;
+}
+
+
+
+.gallery-title{
+ position: absolute;
+ margin: 0;
+ left: 124px;
+ top: 60px;
+ z-index: 100;
+ font-size: 22px;
+ font-weight: 400;
+ line-height: 100%;
+ color: rgba(255, 255, 255, 1);
+ width: 201px;
+ height: 30px;
+ letter-spacing: -0.8px;
+}
+
+/* Слайдер стунтов */
+.gallery-slides{
+    position: relative;
+    height: 525px;
+}
+
+.gallery__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+   opacity: 0;
+  z-index: 0;
+  transition: opacity 0.6s ease-in-out;
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+}
+
+.gallery__slide_active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+.box-image-wrapper{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px 25px;
+gap: 15px;
+width: 525px;
+height: 112.3873291015625px;
+border-radius: 15px;
+opacity: 1;
+background-color: rgba(41, 62, 114, 1);
+}
+
+.box-image-first {
+  margin: 0 auto;
+  width: 525px;
+  height:467px;
+  background-image: url('image/slide__student-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom center;
+  margin-bottom: 15px;
+}
+
+.title-image-first{
+
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.text-image-first{
+    max-width: 320px;
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+
+.box-image-second {
+  margin: 0 auto;
+  width: 525px;
+  height:467px;
+  background-image: url('image/slide__student-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom center;
+  margin-bottom: 15px;
+}
+
+.title-image-second{
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.text-image-second{
+    max-width: 320px;
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.box-image-third {
+  margin: 0 auto;
+  width: 525px;
+  height:467px;
+  background-image: url('image/slide__student-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom center;
+  margin-bottom: 15px;
+}
+
+.title-image-third{
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.text-image-third{
+ max-width: 320px;
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+
+.gallery-controls{
+    position: absolute;
+    top: 98%;
+  left: 400px;
+  display: flex;
+    gap: 10px;
+   z-index: 10;
+
+}
+
+.gallery__control-prev,
+.gallery__control-next{
+  
+  width: 49px;
+  height: 49px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+
+.gallery__control-prev{
+    transform: rotate(180deg);
+}
+
+
+/* Правая сторона про студентов */
+
+.graduate-name{
+font-weight: 400;
+font-style: Regular;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+
+.graduate-info{
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+
+}
+
+.company__info-wrapper{
+    background-color: rgba(246, 246, 246, 1);
+    width: 750px;
+    border-radius: 20px;
+    opacity: 1;
+    padding: 50px 50px 0px 50px;
+}
+
+.company__info-title{
+font-weight: 400;
+font-style: Regular;
+font-size: 44px;
+line-height: 55px;
+letter-spacing: 0%;
+vertical-align: bottom;
+
+}
+.company__info-subtitle{
+ width: 579px;
+font-weight: 500;
+font-style: Medium;
+font-size: 44px;
+line-height: 55px;
+letter-spacing: 0%;
+vertical-align: bottom;
+text-transform: uppercase;
+color: rgba(41, 62, 114, 1);
+
+}
+
+.company__info-text{
+    width: 630px;
+font-weight: 400;
+font-style: Regular;
+font-size: 19px;
+line-height: 27px;
+letter-spacing: 0px;
+margin-top: 40px;
+}
+
+.company__results-wrapper{
+    display: flex;
+    padding: 50px 50px;
+    gap: 15px;
+    padding: 10px 0px;
+}
+.company__info-results{
+    display: flex;
+    flex-direction: column;
+width: 176.19122314453125px;
+height: 145.5517578125px;
+opacity: 1;
+padding: 10px 16px;
+border-radius: 15px;
+background-color:rgba(246, 246, 246, 1) ;
+gap: 14px;
+}
+
+.company__-results-img{
+    width: 34.107421875px;
+height: 34.107421875px;
+opacity: 1;
+}
+
+.company__info-years{
+font-weight: 400;
+font-style: Regular;
+font-size: 30px;
+line-height: 24px;
+letter-spacing: 0px;
+}
+
+.company__info-years-text{
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0px;
+color: rgba(74, 85, 101, 1);
+
+}
+
+
+ /* Блок про студентов */
+@media (max-width: 1200px){
+
+  .about-and-alumni{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+    align-items: start;
+  }
+
+
+  .company__info-container{
+    display: contents;
+  }
+
+ 
+  .gallery-container{
+    width: 100%;
+  }
+
+  .box-image-first,
+  .box-image-second,
+  .box-image-third{
+    width: 100%;
+    max-width: 520px;
+    height: 500px;
+       border-radius: 5%;
+  }
+
+ .box-image-wrapper{
+width: 400px;
+
+}
+
+ 
+
+  .gallery-controls{
+    left: 340px;
+    transform: translateX(-50%);
+    top: 105%;
+  }
+
+
+  .company__info-wrapper{
+    width: 100%;
+    width: 500px;
+    height: 625px;
+  }
+
+  .company__info-subtitle,
+  .company__info-text{
+    width: 100%;
+  }
+
+
+  .company__results-wrapper{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .company__info-results{
+    width: 100%;
+    height: auto;
+  }
+
+  .text-image-first,
+  .text-image-second,
+  .text-image-third{
+    max-width: 300px;
+    font-weight: 300;
+    font-size: 15px;
+  
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .about-and-alumni{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .company__info-container{
+    display: block;
+  }
+
+
+  .gallery-container{
+    width: 100%;
+  }
+
+   .gallery-slides{
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .gallery__slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .gallery__slide_active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  .box-image-first,
+  .box-image-second,
+  .box-image-third{
+    width: 100%;
+    max-width: 500px;
+    height: 380px;
+    margin: 0 auto;
+    border-radius: 5%;
+  }
+
+  .box-image-wrapper{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .gallery-controls{
+    position: relative;
+         left: 180px;
+        top: 75%;
+    transform: none;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .company__info-wrapper{
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  .company__info-title{
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .company__info-subtitle{
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .company__info-text{
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  
+  .company__results-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .company__info-results{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+@media (max-width: 450px){
+
+  .about-and-alumni{
+    gap: 40px;
+    padding: 0 15px;
+  }
+     .gallery-slides{
+   height: 400px;
+  }
+
+  .company__info-wrapper{
+    height: 425px;
+  }
+  /* --- Слайдер --- */
+  .box-image-first,
+  .box-image-second,
+  .box-image-third{
+    max-width: 100%;
+    height: 260px;
+    border-radius: 12px;
+  }
+
+  .box-image-wrapper{
+    max-width: 100%;
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .title-image-first,
+  .title-image-second,
+  .title-image-third{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .text-image-first,
+  .text-image-second,
+  .text-image-third{
+    font-size: 13px;
+    line-height: 17px;
+    max-width: 100%;
+  }
+
+  /* кнопки слайдера */
+  .gallery-controls{
+        position: relative;
+        left: 0;
+        top: 20%;
+        margin-top: 15px;
+        justify-content: space-between;
+  }
+
+  .gallery__control-prev,
+  .gallery__control-next{
+    width: 40px;
+    height: 40px;
+  }
+
+  .gallery__control-prev img,
+  .gallery__control-next img{
+    width: 100%;
+    height: 100%;
+  }
+
+  /* --- Блок компании --- */
+  .company__info-wrapper{
+    padding: 25px 18px;
+    border-radius: 15px;
+  }
+
+  .company__info-title{
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .company__info-subtitle{
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .company__info-text{
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+
+  /* --- Результаты --- */
+  .company__results-wrapper{
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .company__info-results{
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .company__info-years{
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .company__info-years-text{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .company__-results-img{
+    width: 28px;
+    height: 28px;
+  }
+}

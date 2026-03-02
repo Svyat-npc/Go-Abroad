@@ -1,0 +1,440 @@
+/* Форма оценки шансов левый блок */
+.chance__assessment{
+    display: flex;
+    gap: 15px;
+    padding: 0px 38px 0px 38px;
+    margin-bottom: 80px;
+   
+
+
+}
+
+.chance__assessment-container{
+ width: 750px;
+height: 554px;
+border-radius: 20px;
+opacity: 1;
+background-color:  rgba(246, 246, 246, 1);
+padding: 50px 70px 0px 52px; 
+;
+}
+
+.promo-title{
+    width: 587px;
+opacity: 1;
+font-weight: 400;
+font-size: 44px;
+line-height: 55px;
+letter-spacing: 0%;
+vertical-align: bottom;
+margin-bottom: 40px;
+}
+
+.promo-subtitle{
+    width: 540px;
+font-weight: 300;
+font-style: Light;
+font-size: 21px;
+line-height: 31px;
+letter-spacing: 0px;
+margin-bottom: 40px;
+}
+
+.promo-form__box{
+display: flex;
+gap: 12px;
+
+}
+
+.input__box{
+    width: 242.8056640625px;
+height: 45.471923828125px;
+padding:0px 14px;
+border-radius: 10px;
+opacity: 1;
+margin-bottom: 25px;
+font-weight: 300;
+font-style: Light;
+font-size: 19px;
+line-height: 27px;
+letter-spacing: 0px;
+
+}
+
+.promo__submit-btn{
+    width: 221px;
+height: 44px;
+border-radius: 10px;
+opacity: 1;
+background-color:  rgba(41, 62, 114, 1);
+color: white;
+font-weight: 500;
+font-style: Medium;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+}
+
+/* Форма оценки шансов правый блок */
+
+.invite-slides{
+    position: relative;
+    height: 525px;
+}
+
+.invite__slide {
+  position: absolute;
+  left: 0;
+    top: 0;
+   opacity: 0;
+  z-index: 0;
+  transition: opacity 0.6s ease-in-out;
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+
+}
+
+.invite__slide_active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.invite-image-wrapper{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px 25px;
+gap: 15px;
+width: 525px;
+height: 112.3873291015625px;
+border-radius: 15px;
+opacity: 1;
+background-color: rgba(41, 62, 114, 1);
+}
+
+.invite-image-first {
+  margin: 0 auto;
+  width: 525px;
+  height:425px;
+  background-image: url('Image/invite__for-Dana.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom center;
+  margin-bottom: 15px;
+}
+
+.title-invite-first{
+
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.text-invite-first{
+    max-width: 320px;
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+
+.invite-image-second {
+  margin: 0 auto;
+  width: 525px;
+  height:425px;
+  background-image: url('Image/invite__for-Dana.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom center;
+  margin-bottom: 15px;
+}
+
+.title-invite-second{
+
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.text-invite-second{
+    max-width: 320px;
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.invite-image-third {
+  margin: 0 auto;
+  width: 525px;
+  height:425px;
+  background-image: url('Image/invite__for-Dana.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom center;
+  margin-bottom: 15px;
+}
+
+.title-invite-third{
+
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+.text-invite-third{
+    max-width: 320px;
+font-weight: 300;
+font-style: Light;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: rgba(255, 255, 255, 1);
+}
+
+.invite__gallery-controls{
+    position: absolute;
+    top: 90%;
+    left: 391px;
+  display: flex;
+    gap: 10px;
+   z-index: 10;
+
+}
+
+.gallery__control-left,
+.gallery__control-right{
+  
+  width: 49px;
+  height: 49px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+.gallery__control-left{
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1200px){
+
+  .chance__assessment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+    align-items: start;
+  }
+  
+
+  .chance__assessment-container{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .promo-title{
+    width: 100%;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .promo-form__box{
+    display: flex;
+    flex-direction: column;
+  }
+  .promo-subtitle{
+    width: 100%;
+  }
+
+  /* правый слайдер */
+  .invite-slides{
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .invite-image-first,
+  .invite-image-second,
+  .invite-image-third{
+   width: 100%;
+   width: 425px;
+    max-width: 520px;
+    height: 435px;
+       border-radius: 5%;
+  }
+
+  .invite-image-wrapper{
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .invite__gallery-controls{
+    left: 350px;
+    transform: translateX(-50%);
+    top: 70%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .chance__assessment{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .chance__assessment-container{
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .promo-title{
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .promo-subtitle{
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .promo-form__box{
+    flex-direction: column;
+  }
+
+  .input__box,
+  .promo__submit-btn{
+    width: 100%;
+  }
+
+  /* слайдер */
+  .invite-slides{
+    height: 460px;
+    overflow: hidden;
+  }
+.invits-container{
+    width: 630px;
+    height: auto;
+}
+  .invite__slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .invite-image-first,
+  .invite-image-second,
+  .invite-image-third{
+    width: 100%;
+     max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+  }
+
+     .invite-image-wrapper {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+    }
+
+
+  .invite__gallery-controls{
+        position: relative;
+        left: 150px;
+        top: 80%;
+        transform: none;
+        justify-content: center;
+        margin-top: 15px;
+}
+}
+
+
+
+@media (max-width: 450px){
+
+  .chance__assessment{
+    gap: 25px;
+    padding: 0 15px;
+  }
+
+  .chance__assessment-container{
+    padding: 25px 18px;
+    border-radius: 15px;
+  }
+
+  .promo-title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .promo-subtitle{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .invite-slides{
+    height: 360px;
+  }
+
+  .invite-image-first,
+  .invite-image-second,
+  .invite-image-third{
+    height: 260px;
+    border-radius: 12px;
+  }
+
+  .invite-image-wrapper{
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .title-invite-first,
+  .title-invite-second,
+  .title-invite-third{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .text-invite-first,
+  .text-invite-second,
+  .text-invite-third{
+    font-size: 13px;
+    line-height: 17px;
+    max-width: 100%;
+  }
+
+  .invite__gallery-controls{
+    position: relative;
+    top: 50%;
+    left: 65px;
+  }
+
+
+  .invits-container{
+    width: 100%;
+    height: auto;
+}
+}

@@ -1,0 +1,227 @@
+/* header */
+.header::after {
+  content: "";
+  display: block;        
+  width: 100%;
+  border: 1px solid rgba(243, 243, 243, 1);
+  margin-top: 0px;  
+}    
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 38px; 
+}
+
+.logo {
+  margin-right: 210px;
+}
+
+.header__menu {
+  flex: 1;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-right: 84px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header__phone {
+  width: 177px;
+  margin-right: 57px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header__whatsapp {
+  margin-right: 20px;
+}
+
+.header__btn {
+  width: 190px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: rgba(41, 62, 114, 1);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+}
+
+.additional_menu {
+  margin-top: 20px;
+  display: flex;
+  padding: 0px 38px; 
+  margin-bottom: 40px;
+}
+
+.additional__menu-link {
+  color: rgba(153, 153, 153, 1);
+  text-decoration: none;
+}
+
+.additional__menu-list {
+  display: flex;
+  gap: 5px; 
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 34px;
+  vertical-align: middle;
+}
+
+.additional__menu-item {
+  display: inline; 
+}
+
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: flex;              
+  flex-direction: column;    
+  gap: 10px;                  
+  position: absolute;
+  top: 100%;                 
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;                
+  transform: translateY(-10px); 
+  pointer-events: none;      
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;                 
+  transform: translateY(0);   
+  pointer-events: auto;       
+}
+
+.submenu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: rgba(41, 62, 114, 1);
+}
+
+.burger-btn{
+  display: none;
+}
+.burger{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.915);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.burger_open{
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 50px;
+  max-width: 75%;
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 30px;
+  background-color: #ffffffe0;
+  transition: all 0.3s ease;
+  
+}
+
+.nav-burger{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+color: rgba(0, 0, 0, 0.951);
+font-size: 25px;
+font-weight: 400;
+line-height: 100%;
+text-align: left;
+}
+.nav-burger a{
+    margin: 0;
+  text-decoration: none;
+  color: inherit; 
+}
+.burger-close{
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+    cursor: pointer;
+} 
+
+/* --- Мобильная версия --- */
+@media (max-width: 1399px) {
+  /* скрываем список меню и доп. элементы */
+  .header__menu,
+  .header__phone,
+  .header__whatsapp,
+  .header__btn {
+    display: none;
+  }
+
+  .burger-btn {
+  display: block;
+  border: 0;
+  background-color: white;
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+  top: 32px;
+  right: 34px;
+}
+
+  .nav-burger {
+  cursor: pointer;
+  align-items: center;
+}
+.logo-burger{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+  .nav-header {
+    display: none;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+
+}
